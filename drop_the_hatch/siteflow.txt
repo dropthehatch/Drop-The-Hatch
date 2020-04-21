@@ -1,0 +1,17 @@
+index --> page --> single
+
+/// index ( main page of website ) ///
+// contents //
+1. main ( top ) navigation
+2. gallery pages featured image
+3. blog snippet
+
+/// page ( category )
+// contents // 
+1. single recent post - gallery
+2. static nav - category post titles
+
+/// single-page ( post )///
+// contents //
+1. post contents - gallery
+2. static nav - parent category post titles

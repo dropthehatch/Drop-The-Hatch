@@ -15,6 +15,82 @@ html, body {
   padding: 0;
 }
 
+
+/**********
+page functionality - shows the first div of the wp_block
+excludes the second and third
+******/
+
+div .main-content ul li:nth-child(2) {
+  display: none;
+}
+
+div .main-content ul li:nth-child(3) {
+  display: none;
+}
+
+/**** button visibility
+changes based on page
+**/
+
+/* this is for the photography pages and child posts */
+.page-id-80 div .button-container-desktop a:nth-child(1) {
+  display:none;
+}
+.page-id-80 div .button-container-desktop a:nth-child(2) {
+  display:none;
+}
+.postid-139 div .button-container-desktop a:nth-child(1) {
+  display:none;
+}
+.postid-139 div .button-container-desktop a:nth-child(2) {
+  display:none;
+}
+.postid-137 div .button-container-desktop a:nth-child(1) {
+  display:none;
+}
+.postid-137 div .button-container-desktop a:nth-child(2) {
+  display:none;
+}
+.postid-113 div .button-container-desktop a:nth-child(1) {
+  display:none;
+}
+.postid-113 div .button-container-desktop a:nth-child(2) {
+  display:none;
+}
+
+
+/* this is for the design pages and child posts */
+
+.page-id-83 div .button-container-desktop a:nth-child(3) {
+  display:none;
+}
+.page-id-83 div .button-container-desktop a:nth-child(4) {
+  display:none;
+}
+.page-id- div .button-container-desktop a:nth-child(5) {
+  display:none;
+}
+.postid-301 div .button-container-desktop a:nth-child(3) {
+  display:none;
+}
+.postid-301 div .button-container-desktop a:nth-child(4) {
+  display:none;
+}
+.postid-301 div .button-container-desktop a:nth-child(5) {
+  display:none;
+}
+.postid-240 div .button-container-desktop a:nth-child(3) {
+  display:none;
+}
+.postid-240 div .button-container-desktop a:nth-child(4) {
+  display:none;
+}
+.postid-240 div .button-container-desktop a:nth-child(5) {
+  display:none;
+}
+
+
 /*******
 Top Navigation and contents
                       *****/
@@ -213,6 +289,15 @@ Right hand side of the screen navigation bar that lets you know what page you ar
   background-color: #4AB0D5;
 }
 
+.side-Nav ul li a:active {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  right: -1px;
+  background-color: #4AB0D5;
+}
 
 /*** Hover/active/focus states for the side nav ***/
 
